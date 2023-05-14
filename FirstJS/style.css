@@ -1,0 +1,19 @@
+div {
+    margin: 20px 0 20px 10px;
+}
+button {
+    margin: 10px;
+}
+.change-color {
+    color: pink;
+}
+
+#task9 {
+    border: 3px solid red;  
+    width: 350px;
+    height: 400px;
+}
+
+input {
+    text-align: center;
+}

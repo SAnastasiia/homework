@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <link rel="stylesheet" href="style.css">  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>My page</title>
+  
+</head>
+
+<body>
+ 
+  <div> Task 1 - Создать html по DOM <br>
+      <h2> Welcome to my <a href="https://www.google.com/search?q=google&hl=en&sxsrf=APwXEdfcYQYWdY7HB1x1pH0fmM6639cvTg%3A1683910874497&source=hp&ei=2nBeZMiXGpiEhbIP5tan4A0&iflsig=AOEireoAAAAAZF5-6g5hhkyWDbeHN5-xk-z7M-sXKS9n&ved=0ahUKEwjI7IPsoPD-AhUYQkEAHWbrCdwQ4dUDCAk&uact=5&oq=google&gs_lcp=Cgdnd3Mtd2l6EAMyBwgjEIoFECcyDgguEIAEEMcBENEDEMsBMggIABCABBDLATIICAAQgAQQywEyCAgAEIAEEMsBMggIABCABBDLATIICAAQgAQQywEyCAgAEIAEEMsBMggIABCABBDLATIICAAQgAQQywE6DQguEMcBENEDEOoCECc6BwgjEOoCECc6BwguEOoCECc6CwguEIAEEMcBENEDOgUIABCABDoFCC4QgAQ6CwguEIAEEMcBEK8BOgoIABCABBAKEMsBOhAILhCABBDHARCvARAKEMsBOg0ILhDHARDRAxCKBRAnULQVWPM-YJ1AaAZwAHgAgAHnAogBhxqSAQQzLTEwmAEAoAEBsAEK&sclient=gws-wiz">page</a></h2>
+      <p> This is the first paragraph </p>
+          this is the end 
+  </div>
+
+  <div> Task 2 - Алерт по нажатию на кнопку<br>
+      <button class = "task2" type ="button" > Нажми на меня </button>
+  </div>
+
+<div> Task 3 - Вывод содержимого инпута в Alert по нажатию на кнопку <br>
+
+  <button type="button" onclick="getInputValue()"> 
+    Нажми на меня  
+  </button>
+
+  <input type="text" class="textInput"  placeholder="Сообщение"/>
+
+</div>
+
+
+<div>  Task 4 - Квадрат содержимого инпута вывести в Alert по нажатию на кнопку (и что будет если ввести текст? как этого избежать?))<br>
+ 
+  <button type="button" onclick="squareOfNumber()"> 
+    Нажми на меня  
+  </button>
+
+  <input type="text" id="task4"  placeholder="enter number"/>
+
+</div>
+
+<div> Task 5 -  По нажатию на кнопку меняется ее текст<br>
+  
+  <button class = "task5" type ="button" onclick="changeText()"> Нажми на меня </button>
+
+</div>
+
+<div> Task 6 - Работа с CSS - по нажатию на кнопку меняется цвет текста в инпуте <br>
+ 
+  <button type="button" onclick = "changeColor()"> Нажми на меня </button>
+
+  <input type="text" class = "task6"  placeholder="enter text"/>
+</div>
+
+<div> Task 7 - Обмен содержимым между двумя инпутами по нажатию на кнопку*<br>
+  
+  <button type="button" onclick = "changeValue()"> Нажми на меня </button>
+
+  <input type="text" id = "input1"  placeholder="enter text"/>
+  
+  <input type="text" id = "input2"  placeholder="enter text"/>
+
+</div>
+
+<div> Task 8 - Блокирование полей ввода*<br> 
+ 
+  <button type="button" onclick="block()"> Block </button>
+ 
+  <button type="button" onclick="unblock()"> Unblock </button>
+
+  <input type="text" id = "task8"  placeholder="enter text" disabled/>
+
+</div>
+
+<div> Task 9 - Alert по уходу мышью с элемента* <br>
+
+  <p id = "task9" > Наведи на меня мышь, а потом убери!</p>
+   
+</div>
+
+<div> Task 10 Калькулятор </div>
+
+<input id = "input10-1"  placeholder="enter number"/>
+
+<input  id = "operator"  placeholder="enter operator"/>
+
+<input  id = "input10-2"  placeholder="enter number"/>
+
+<button  onclick="main()"> Посчитать </button>
+
+<br>
+<span> result <input  id = "result"  placeholder="enter number"/>
+</span>
+
+
+
+</body>
+</html>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
