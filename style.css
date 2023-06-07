@@ -1,0 +1,108 @@
+.navigation {
+    position: absolute;
+    right: 10px;
+    top: 39.4vh;
+    z-index: 10;
+    margin: 0px;
+    padding: 0px 67px 0px 0px;
+}
+
+.navigation li a {
+    width: 4px;
+    height: 4px;
+    display: block;
+    padding: 15px;
+}
+a {
+    font-weight: lighter;
+    color: silver;
+    text-decoration: none;
+}
+
+.navigation li {
+    text-align: center;
+    cursor: pointer;
+    padding: 0px;
+}
+
+
+.navigation li a.active::before {
+    width: 12px;
+    height: 12px;
+    margin-top: -4px;
+    left: 11px;
+    background: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(68, 68, 68);
+    border-image: initial;
+}
+.navigation li a::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    transform: matrix3d(0.7071, 0.7071, 0, 0, -0.7071, 0.7071, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transition: background 0.2s ease 0s, width 0.3s ease 0s, height 0.3s ease 0s;
+    border-width: 0px;
+    border-style: solid;
+    border-color: rgb(68, 68, 68);
+    border-image: initial;
+    background: rgb(68, 68, 68);
+}
+
+
+
+li {
+    list-style-type: none;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 100vw; /* Полный экран по ширине */
+    height: 100vh; /* Полный экран по высоте */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+    overflow: auto;
+  }
+  
+  .container section {
+    width: 100vw; /* Полный экран по ширине */
+    height: 100vh; /* Полный экран по высоте */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Начальная прозрачность секции */
+    transition: opacity 0.5s ease-in-out;
+    flex-shrink: 0;
+  }
+  
+  .container section.active {
+    opacity: 1; /* Показываем активную секцию */
+  }
+  
+  
+  
+  #section1 {
+    background-color: #ffcccc;
+  }
+  
+  #section2 {
+    background-color: #ccffcc;
+  }
+  #section3 {
+    background-color: cyan;
+  }
+  #section4 {
+    background-color: silver;
+  }
+  
+
+
