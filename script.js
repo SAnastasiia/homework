@@ -14,6 +14,7 @@ container.addEventListener('scroll', function () {
   });
 });
 
+
 let click = document.querySelectorAll('.myLink');
 
 const elements = document.querySelectorAll('.myLink');
@@ -28,3 +29,4 @@ elements.forEach(function(element) {
     this.classList.toggle('active');
   });
 });
+
