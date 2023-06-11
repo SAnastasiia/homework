@@ -1,0 +1,42 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+  .section {
+    height: 100%;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: #f9f9f9;
+    text-align: center;
+    }
+
+.firstSection {
+  background-color: aqua;
+}
+
+.secondSection {
+  background-color: red;
+}
+
+.thirdSection {
+  background-color: burlywood;
+}
+
+.fourthSection {
+  background-color: cadetblue;
+}
+
+    
+  
+  
+  .section.active {
+    display: flex;
+  }
+  
